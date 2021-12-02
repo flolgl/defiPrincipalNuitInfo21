@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import "./FormInscription.css";
 import TextField from '@mui/material/TextField';
-import { Box } from '@mui/system';
-import "./FormConnexion.css";
 import Button from '@mui/material/Button';
 
-   
+
+
 class FormConnexion extends React.Component {
     constructor(props) {
         super(props);
@@ -22,35 +22,26 @@ class FormConnexion extends React.Component {
     handleSubmit(event) {
         alert('Le nom a été soumis : ' + this.state.value);
         event.preventDefault();
-    };
-    render(){
-    return (
-        <div className="container">
-            <div className="inner-group">
-                <div className="inner-container">
-                    <div className="header">
-                        <h1>Connexion</h1>
-                    </div>
+    }
 
-                    <form onSubmit={event => this.handleSubmitForm(event)}>
-                        <div className="p">
-                        <TextField id="outlined-basic" label="Prenom" variant="outlined" fullWidth="true"/>
-                        </div>
-                    <br></br>
-                        <div>
-                        <TextField id="outlined-basic" label="Mot de passe" variant="outlined" fullWidth="true"/>
-                        </div>
-                        <br></br>
-                    <div className="boutton">
+    render() {
+        return (
+            <div className="formContainer">
+                <div className="inner-group">
+
+                    <form onSubmit={this.handleSubmit} className = "containerFormInscrip">
+                        <p>Inscription</p>
+
+                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                        <TextField id="outlined-basic" label="Mot de passe" variant="outlined" />
+
                         <Button variant="outlined">Se connecter</Button>
-                    </div>
                     </form>
                 </div>
             </div>
-        </div>
-  
-    
-    )  
-};
+        );
+    }
 }
+
 export default FormConnexion;
+

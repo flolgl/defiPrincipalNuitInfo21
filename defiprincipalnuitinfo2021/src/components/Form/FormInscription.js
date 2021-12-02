@@ -26,18 +26,20 @@ class FormInscription extends React.Component {
 
     render() {
         return (
-            <div className="inner-group">
+            <div className="formContainer">
+                <div className="inner-group">
 
-                <form onSubmit={this.handleSubmit} className = "containerFormInscrip">
-                    <p>Inscription</p>
-                    <TextField id="outlined-basic" label="Nom" variant="outlined" />
-                    <TextField id="outlined-basic" label="Prénom" variant="outlined" />
-                    <TextField id="outlined-basic" label="Email" variant="outlined" />
-                    <TextField id="outlined-basic" label="Mot de passe" variant="outlined" />
-                    <TextField id="outlined-basic" label="Confirmation mot de passe" variant="outlined" />
+                    <form onSubmit={this.handleSubmit} className = "containerFormInscrip">
+                        <p>Inscription</p>
+                        <TextField id="outlined-basic" label="Nom" variant="outlined" />
+                        <TextField id="outlined-basic" label="Prénom" variant="outlined" />
+                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                        <TextField id="outlined-basic" label="Mot de passe" variant="outlined" />
+                        <TextField id="outlined-basic" label="Confirmation mot de passe" variant="outlined" />
 
-                    <Button variant="outlined">Envoyez</Button>
-                </form>
+                        <Button variant="outlined">Envoyez</Button>
+                    </form>
+                </div>
             </div>
         );
     }

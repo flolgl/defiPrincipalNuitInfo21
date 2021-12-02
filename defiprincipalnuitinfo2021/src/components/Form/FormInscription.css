@@ -14,3 +14,12 @@
     flex-wrap:wrap;
     display:flex;
 }
+
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
