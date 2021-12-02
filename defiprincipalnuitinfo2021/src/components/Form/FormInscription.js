@@ -1,0 +1,53 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+import "./FormInscription.css";
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+const FormIscription = () => {
+    return (
+        <div>
+           // <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+        </div>
+    )
+};
+
+
+class FormInscription extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
+
+    handleSubmit(event) {
+        alert('Le nom a été soumis : ' + this.state.value);
+        event.preventDefault();
+    }
+
+    render() {
+        return (
+            <div className="inner-group">
+
+                <form onSubmit={this.handleSubmit} className = "containerFormInscrip">
+                    <p>Inscription</p>
+                    <TextField id="outlined-basic" label="Nom" variant="outlined" />
+                    <TextField id="outlined-basic" label="Prénom" variant="outlined" />
+                    <TextField id="outlined-basic" label="Email" variant="outlined" />
+                    <TextField id="outlined-basic" label="Mot de passe" variant="outlined" />
+                    <TextField id="outlined-basic" label="Confirmation mot de passe" variant="outlined" />
+
+                    <Button variant="outlined">Envoyez</Button>
+                </form>
+            </div>
+        );
+    }
+}
+
+export default FormInscription;
+

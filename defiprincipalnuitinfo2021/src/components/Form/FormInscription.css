@@ -1,0 +1,16 @@
+.containerFormInscrip {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 6px 12px 0px;
+    padding: 30px;
+    gap: 30px;
+    width: 600px;
+}
+
+.inner-group{
+
+    justify-content:center;
+    flex-wrap:wrap;
+    display:flex;
+}
