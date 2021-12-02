@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <footer class="footer-distributed">
         <div class="footer-left">
           <h3>
