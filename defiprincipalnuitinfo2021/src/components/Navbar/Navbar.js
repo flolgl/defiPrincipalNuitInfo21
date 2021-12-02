@@ -1,4 +1,6 @@
 import React from "react";
+import Connection from "../Connection/Connection";
+import Searchbox from "../Searchbox/Searchbox";
 
 import "./Navbar.css";
 
@@ -7,7 +9,9 @@ const Navbar = () => {
     <div>
       <header>
         <div className="logo">
-          <a href="#" className="navbar__logo">Logo</a>
+          <a href="#" className="navbar__logo">
+            Logo
+          </a>
         </div>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <label for="nav-toggle" className="nav-toggle-label">
@@ -23,6 +27,14 @@ const Navbar = () => {
             </li>
             <li>
               <a>menu3</a>
+            </li>
+            <li>
+              <Searchbox />
+            </li>
+            <li>
+              <a>
+                <Connection />
+              </a>
             </li>
           </ul>
         </nav>
