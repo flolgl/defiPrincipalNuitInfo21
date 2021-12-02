@@ -152,10 +152,12 @@ nav a {
     margin-bottom: 0;
   }
   nav ul {
+    align-content: center;
     display: flex;
     justify-content: flex-end;
   }
   nav a {
+      top: 1em;
     opacity: 1;
     position: relative;
   }
