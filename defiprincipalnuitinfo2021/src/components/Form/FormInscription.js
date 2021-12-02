@@ -3,13 +3,7 @@ import ReactDom from 'react-dom';
 import "./FormInscription.css";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-const FormIscription = () => {
-    return (
-        <div>
-           // <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        </div>
-    )
-};
+
 
 
 class FormInscription extends React.Component {

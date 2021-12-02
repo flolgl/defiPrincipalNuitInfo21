@@ -25,6 +25,10 @@
   left: 0;
 }
 
+.Navbar{
+  margin-bottom: 4em;
+}
+
 .logo_img {
   height: 2.5em;
   width: auto;

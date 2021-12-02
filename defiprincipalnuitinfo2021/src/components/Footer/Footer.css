@@ -4,6 +4,10 @@
   font-family: Roboto;
 }
 
+.footer{
+  margin-top: 4em;
+}
+
 .footer-distributed {
   background: blue;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
