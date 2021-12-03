@@ -1,78 +1,78 @@
-import React, { useState } from "react";
-import Button from "../Button/Button";
+import React from "react";
 import "./Footer.css";
-import { styled } from '@mui/material/styles';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import Grid from '@mui/material/Grid';
 
 
+function FormRow() {
+    return (
+        <React.Fragment>
+            <Grid item md={2} sm={6} xs={12}>
+                <Link href="https://sauveteurdudunkerquois.fr/qui-sommes-nous/" underline="hover" color={"white"}
+                    >
+                    {'Qui sommes-nous ?'}
+                </Link>
+            </Grid>
+            <Grid item md={2} sm={6} xs={12}>
+                <Link href="https://sauveteurdudunkerquois.fr/presse/" underline="hover" color={"white"}>
+                    {'Presse'}
+                </Link>
+            </Grid>
+            <Grid item md={2} sm={6} xs={12}>
+                <Link href="https://sauveteurdudunkerquois.fr/sites-amis/" underline="hover" color={"white"}>
+                    {'Sites amis'}
+                </Link>
+            </Grid>
+            <Grid item md={2} sm={6} xs={12}>
+                <Link href="https://sauveteurdudunkerquois.fr/plan-du-site/" underline="hover" color={"white"}>
+                    {'Plan du site'}
+                </Link>
+            </Grid>
+            <Grid item md={2} sm={6} xs={12}>
+                <Link href="https://sauveteurdudunkerquois.fr/lettre-hebdomadaire/" underline="hover" color={"white"}>
+                    {'Lettre hebdomadaire'}
+                </Link>
+            </Grid>
+            <Grid item md={2} sm={6} xs={12}>
+                    <Link href="https://sauveteurdudunkerquois.fr/exprimez-vous/" underline="hover" color={"white"}>
+                        {'Exprimez-vous'}
+                    </Link>
+            </Grid>
+        </React.Fragment>
+    );
+}
 
-
-
-
-const Footer = (props) => {
-  
+const Footer = () => {
   return (
     <div className="footer">
       <footer class="footer-distributed">
         <div class="footer-left">
-          <h3>
-            Ma<span>Libellule</span>
-          </h3>
-
-          <p class="footer-links">
-            <a href="#">Home</a>·<a href="#">Blog</a>·<a href="#">Pricing</a>·
-            <a href="#">About</a>·<a href="#">Faq</a>·<a href="#">Contact</a>
-          </p>
-
-          <p class="footer-company-name">Group © 2021</p>
-
-          <div class="footer-icons">
-            <a href="#">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-github"></i>
-            </a>
-            
-          </div>
-
-                         
-                    <div className="container">
-                  <span style={{ color: props.stateDark ? "grey" : "yellow" }}>☀︎</span>
-                  <div className="switch-checkbox">
-                    <label className="switch">
-                      <input type="checkbox" onChange={() => props.setStateDark(!props.stateDark)} />
-                      <span className="slider round"> </span>
-                    </label>
-                  </div>
-                  <span style={{ color: props.stateDark ? "#c96dfd" : "grey" }}>☽</span>
-                    </div>
+            <h3>Ma Libellule</h3>
         </div>
-
-        <div class="footer-right">
-          <p>Contact Us</p>
-
-          <form action="#" method="post">
-            <input type="text" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Message"></textarea>
-            <Button className="btn-border-2">Send</Button>
-          </form>
-        </div>
+            <Box
+                sx={{
+                    mx: 'auto',
+                    bgcolor: 'primary.main',
+                    color: 'blue',
+                    width: 200,
+                    p: 1,
+                    m: 1,
+                    borderRadius: 1,
+                    textAlign: 'center',
+                    display: 'inline',
+                    alignContent: 'space-around'
+                }}
+            >
+                <Grid container spacing={1}>
+                    <Grid container item spacing={3}>
+                        <FormRow />
+                    </Grid>
+                </Grid>
+            </Box>
       </footer>
     </div>
   );
 };
-
-
 
 export default Footer;
