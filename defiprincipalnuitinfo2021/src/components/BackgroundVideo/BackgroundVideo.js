@@ -1,11 +1,10 @@
-import video from "./video.mp4";
 import "./BackgroundVideo.css";
 
-const BackgroundVideo = () => {
+const BackgroundVideo = (props) => {
   return (
     <div>
       <video autoPlay loop muted>
-        <source src={video} type="video/mp4" />
+        <source src={props.video} type="video/mp4" />
       </video>
     </div>
   );
