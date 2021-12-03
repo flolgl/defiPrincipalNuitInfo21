@@ -29,8 +29,8 @@ class FormConnexion extends React.Component {
             <div className="formContainer">
                 <div className="inner-group">
 
-                    <form onSubmit={this.handleSubmit} className = "containerFormInscrip">
-                        <p>Inscription</p>
+                    <form onSubmit={this.handleSubmit} className = "containerFormInscrip margin-form">
+                        <p>Connexion</p>
 
                         <TextField id="outlined-basic" label="Email" variant="outlined" />
                         <TextField id="outlined-basic" label="Mot de passe" variant="outlined" />
