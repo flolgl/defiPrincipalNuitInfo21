@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import "./Footer.css";
+import { styled } from '@mui/material/styles';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
-const Footer = () => {
+
+
+
+
+
+const Footer = (props) => {
+  
   return (
     <div className="footer">
       <footer class="footer-distributed">
@@ -31,7 +43,20 @@ const Footer = () => {
             <a href="#">
               <i class="fa fa-github"></i>
             </a>
+            
           </div>
+
+                         
+                    <div className="container">
+                  <span style={{ color: props.stateDark ? "grey" : "yellow" }}>☀︎</span>
+                  <div className="switch-checkbox">
+                    <label className="switch">
+                      <input type="checkbox" onChange={() => props.setStateDark(!props.stateDark)} />
+                      <span className="slider round"> </span>
+                    </label>
+                  </div>
+                  <span style={{ color: props.stateDark ? "#c96dfd" : "grey" }}>☽</span>
+                    </div>
         </div>
 
         <div class="footer-right">
@@ -47,5 +72,7 @@ const Footer = () => {
     </div>
   );
 };
+
+
 
 export default Footer;
