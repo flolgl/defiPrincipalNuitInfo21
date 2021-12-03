@@ -8,6 +8,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import PageTPL from "./components/PageTPL/PageTPL";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import Interventions from "./pages/Interventions";
+import Sauveteurs from "./pages/Sauveteurs";
+import Sauves from "./pages/Sauves";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,6 +26,14 @@ function App() {
           <Route
             path="/interventions"
             element={<Interventions variant="contained" />}
+          />
+          <Route
+            path="/sauveteurs"
+            element={<Sauveteurs variant="contained" />}
+          />
+          <Route
+            path="/sorties"
+            element={<Sauves variant="contained" />}
           />
           <Route
             path="/inscription"

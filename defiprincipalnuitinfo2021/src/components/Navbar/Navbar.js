@@ -59,7 +59,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const pages = [["Interventions", "/interventions"], ["Sauveteurs", "/sauveteurs"], ["Sorties en mer", "/sorties"]];
+const pages = [["Interventions", "/interventions"], ["Sauveteurs", "/sauveteurs"], ["Sauves", "/sauves"]];
 const settings = [["Connexion", "/connexion"], ["Inscription", "/inscription"]];
 
 const ResponsiveAppBar = () => {
