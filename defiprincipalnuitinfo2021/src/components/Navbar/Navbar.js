@@ -133,10 +133,6 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            <img
-              class="logo_img"
-              src="http://assets.stickpng.com/images/58bf2291e443f41d77c734d7.png"
-            ></img>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
