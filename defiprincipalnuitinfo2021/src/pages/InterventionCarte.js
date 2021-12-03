@@ -28,7 +28,7 @@ const InterventionCarte = (props) => {
                 </Typography>
                 </CardContent>
                 <CardActions>
-                <Button size="small" component={Link} to={"/interventions/" + props.id}>Learn More</Button>
+                <Button size="small" component={Link} to={"/intervention/info/" + props.id}>Learn More</Button>
             </CardActions>
         </Card>
     )
