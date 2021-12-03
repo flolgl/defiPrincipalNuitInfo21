@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
+import BackgroundVideo from '../BackgroundVideo/BackgroundVideo';
 
 import "./PageTPL.css";
 
@@ -27,7 +28,7 @@ class PageTPL extends Component{
 
     render(){
         return (
-            <div></div>
+            <BackgroundVideo />
         );
     }
 
