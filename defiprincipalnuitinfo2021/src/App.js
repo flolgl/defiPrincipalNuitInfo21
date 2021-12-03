@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState }  from 'react';
 import ReactDOM from 'react-dom';
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,7 +10,9 @@ import { Routes, Route, Link } from "react-router-dom";
 import PageTPL from './components/PageTPL/PageTPL';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
     <div className="App">
 
       <Navbar/>
@@ -21,7 +23,10 @@ function App() {
         <Route path="/ajouter" element={<FormConnexion variant="contained"/>} />
     
       </Routes>
-      <Footer/>
+      <Footer stateDark = {darkMode} setStateDark ={setDarkMode}/>
+      
+      
+    </div>
     </div>
   );
 }
