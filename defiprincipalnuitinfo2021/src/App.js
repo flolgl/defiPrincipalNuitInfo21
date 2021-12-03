@@ -7,7 +7,6 @@ import FormConnexion from "./components/Form/FormConnexion"
 import FormInscription from "./components/Form/FormInscription"
 import Button from '@mui/material/Button';
 import { Routes, Route, Link } from "react-router-dom";
-import PageTPL from './components/PageTPL/PageTPL';
 
 function App() {
   return (
