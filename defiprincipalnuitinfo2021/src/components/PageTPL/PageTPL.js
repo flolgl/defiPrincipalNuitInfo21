@@ -28,11 +28,7 @@ class PageTPL extends Component {
     return (
       <div>
         <BackgroundVideo />
-        <div className="section1">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+
       </div>
     );
   }
