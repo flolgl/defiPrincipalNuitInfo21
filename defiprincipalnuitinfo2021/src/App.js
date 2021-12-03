@@ -9,7 +9,9 @@ import PageTPL from "./components/PageTPL/PageTPL";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
     <div className="App">
       <Navbar />
       <BackgroundVideo />
@@ -28,7 +30,10 @@ function App() {
           element={<FormConnexion variant="contained" />}
         />
       </Routes>
-      <Footer />
+      <Footer stateDark = {darkMode} setStateDark ={setDarkMode}/>
+      
+      
+    </div>
     </div>
   );
 }
