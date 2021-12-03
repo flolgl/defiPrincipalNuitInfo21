@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -12,28 +12,25 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
-    <div className="App">
-      <Navbar />
-      <BackgroundVideo />
-      <Routes>
-        <Route path="/" element={<PageTPL variant="contained" />} />
-        <Route
-          path="/connexion"
-          element={<FormConnexion variant="contained" />}
-        />
-        <Route
-          path="/inscription"
-          element={<FormInscription variant="contained" />}
-        />
-        <Route
-          path="/ajouter"
-          element={<FormConnexion variant="contained" />}
-        />
-      </Routes>
-      <Footer stateDark = {darkMode} setStateDark ={setDarkMode}/>
-      
-      
-    </div>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<PageTPL variant="contained" />} />
+          <Route
+            path="/connexion"
+            element={<FormConnexion variant="contained" />}
+          />
+          <Route
+            path="/inscription"
+            element={<FormInscription variant="contained" />}
+          />
+          <Route
+            path="/ajouter"
+            element={<FormConnexion variant="contained" />}
+          />
+        </Routes>
+        <Footer stateDark={darkMode} setStateDark={setDarkMode} />
+      </div>
     </div>
   );
 }
