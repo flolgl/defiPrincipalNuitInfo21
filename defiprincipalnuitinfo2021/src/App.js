@@ -7,6 +7,7 @@ import FormInscription from "./components/Form/FormInscription";
 import { Routes, Route, Link } from "react-router-dom";
 import PageTPL from "./components/PageTPL/PageTPL";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
+import Interventions from "./pages/Interventions";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="/connexion"
             element={<FormConnexion variant="contained" />}
+          />
+          <Route
+            path="/interventions"
+            element={<Interventions variant="contained" />}
           />
           <Route
             path="/inscription"
